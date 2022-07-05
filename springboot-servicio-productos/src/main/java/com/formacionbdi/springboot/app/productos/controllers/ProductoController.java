@@ -31,6 +31,11 @@ public class ProductoController {
 	public Producto detalle(@PathVariable Long id) {
 		Producto producto = productoService.findById(id);
 		producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
+		
+		boolean ok = true;
+		if (!ok) {
+			throw new RuntimeException("no se pudo cargar el producto");
+		}
 		return producto;
 	}
 
