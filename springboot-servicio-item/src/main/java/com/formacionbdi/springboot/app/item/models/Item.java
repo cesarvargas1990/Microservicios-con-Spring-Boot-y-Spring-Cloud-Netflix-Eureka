@@ -2,8 +2,15 @@ package com.formacionbdi.springboot.app.item.models;
 
 public class Item {
 
-	public Item() {
+	private Producto producto;
+	private Integer cantidad;
 
+	public Item() {
+	}
+
+	public Item(Producto producto, Integer cantidad) {
+		this.producto = producto;
+		this.cantidad = cantidad;
 	}
 
 	public Producto getProducto() {
@@ -21,17 +28,9 @@ public class Item {
 	public void setCantidad(Integer cantidad) {
 		this.cantidad = cantidad;
 	}
-
-	public Item(Producto producto, Integer cantidad) {
-		this.producto = producto;
-		this.cantidad = cantidad;
-	}
-
-	private Producto producto;
-	private Integer cantidad;
-	
 	
 	public Double getTotal() {
 		return producto.getPrecio() * cantidad.doubleValue();
 	}
+
 }

@@ -8,21 +8,21 @@ import org.springframework.stereotype.Service;
 
 import com.formacionbdi.springboot.app.item.clientes.ProductoClienteRest;
 import com.formacionbdi.springboot.app.item.models.Item;
-@Service
-public class ItemServiceFeign implements ItemService {
 
+@Service("serviceFeign")
+public class ItemServiceFeign implements ItemService {
+	
 	@Autowired
-	public ProductoClienteRest clienteFeign;
+	private ProductoClienteRest clienteFeign;
+
 	@Override
 	public List<Item> findAll() {
-		// TODO Auto-generated method stub
-		return clienteFeign.listar().stream().map(p -> new Item(p,1)).collect(Collectors.toList());
+		return clienteFeign.listar().stream().map(p -> new Item(p, 1)).collect(Collectors.toList());
 	}
 
 	@Override
 	public Item findById(Long id, Integer cantidad) {
-		// TODO Auto-generated method stub
-		return new Item(clienteFeign.detalle(id),cantidad);
+		return new Item(clienteFeign.detalle(id), cantidad);
 	}
 
 }
