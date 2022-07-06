@@ -8,10 +8,10 @@
 		<version>2.5.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.formacionbdi.springboot.app.eureka</groupId>
-	<artifactId>springboot-servicio-eureka-server</artifactId>
+	<groupId>com.formacionbdi.springboot.app.config</groupId>
+	<artifactId>springboot-servicio-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-servicio-eureka-server</name>
+	<name>springboot-servicio-config-server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -21,13 +21,8 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.glassfish.jaxb</groupId>
-			<artifactId>jaxb-runtime</artifactId>
-		</dependency>
-
-		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
 
 		<dependency>
