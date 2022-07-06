@@ -62,7 +62,7 @@ public class Producto implements Serializable{
 	public void setPort(Integer port) {
 		this.port = port;
 	}
-	
+
 	private static final long serialVersionUID = 1285454306356845809L;
 
 }
