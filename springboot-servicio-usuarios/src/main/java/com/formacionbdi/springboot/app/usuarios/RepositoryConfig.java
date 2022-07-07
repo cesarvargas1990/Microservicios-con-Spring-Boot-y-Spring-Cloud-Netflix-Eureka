@@ -9,10 +9,12 @@ import com.formacionbdi.springboot.app.commons.usuarios.models.entity.Role;
 import com.formacionbdi.springboot.app.commons.usuarios.models.entity.Usuario;
 
 @Configuration
-public class RepositoryConfig implements RepositoryRestConfigurer{
+public class RepositoryConfig implements RepositoryRestConfigurer {
 
 	@Override
 	public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
 		config.exposeIdsFor(Usuario.class, Role.class);
 	}
+
+	
 }
