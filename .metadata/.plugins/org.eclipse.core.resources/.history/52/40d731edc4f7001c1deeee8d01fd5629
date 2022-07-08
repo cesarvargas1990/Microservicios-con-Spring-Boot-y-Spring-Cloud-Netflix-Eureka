@@ -1,5 +1,0 @@
-package com.formacionbdi.springboot.app.productos.models.service;
-
-public class ProductoServiceImpl {
-
-}
