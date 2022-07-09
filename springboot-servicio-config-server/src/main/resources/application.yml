@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: config-server
+    
+ 
+    
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@bitbucket.org:cesardeveloper/servicio-items-config.git
+          clone-on-start: true
+          ignore-local-ssh-settings: true
+          passphrase: 1234567
+          private-key: |
+                        -----BEGIN RSA PRIVATE KEY-----
+                        Proc-Type: 4,ENCRYPTED
+                        DEK-Info: DES-EDE3-CBC,9FA5F76C39C2C4D6
+                        
+                        RIZkVN5EO7vpusN9fzDXzQ9BE0v+onpqohUQy8sQGAXODjtvlaaDfkPBtSZGgyKv
+                        jkbm57c5YvxFKv4xBLJhpH/HpC1uXJNA26dAyggXJTU9B4xg9inn2FSED+gIaUWT
+                        w7CSc7J7oUCCrOGFDm0e0TlPEIiVUdXz4eFEg6ug2hT4qG8+UPCoVu4E4EY3VZTl
+                        2ELz5iv23MSOx9uFnu/oFtV3l/j0uBemAm1SrIeYALL8uDxGo6+pfYyoysRgDGE7
+                        5gTkAl7eMBY3v9qCkBzUWh5rx9/QnwqbhEAR1VfWpAQ23bbnjuViEkolT1ELhp6+
+                        xps7+ZR/o8r5we6Jyz6w2rtJM38aU6SE/Aue1ruhYQ2bptgXjXMx6Ruf3HvqAAN9
+                        u97HedX1gK1Mn+bs17xJ/CYC/s1EDjG4CatlZ9Q+tuXExWovw3F3nc7CjIHqz864
+                        +6caqJxIxGltmn4BoB5T7ECBYq6j3m0qJnYTJZmOx4iRnK3nx8HEwzVL1Gd8Zcp4
+                        8aheqkSje+Ujblnuu2TSELL/6lLPcdrylapJqiExA0WsHQI7uFVxdavW398VCpSD
+                        TcniXxhoVpgrRZ4HK3+ZyETozRR6wHXdQH9fF3czDPrxeglOh2CSoBVn+oUvqRxL
+                        NvWMeMwZs8hi2ACTzJ5jFTUAd5gx3al1fPd4GbXF4JI9C7j7Ft2ulsTE6kfAOmUc
+                        HFG7ri8JUG75QKj1U0bQd+VaXyCPCi6blvtMzVNVeLqu7OiIowB8EmxgQtbgeNBt
+                        HVwkHclmOVNT0HbTxaTNpBO1D2oScrQHrA0z+yI413UiqMhEAS/VCp/scPMrF4OO
+                        vhFTTD6C7sLZgjpUKanciYBKn19WLekeV847UTaeM0PyewbQOS7fpn681rx+u31/
+                        MRMb/L0emKEGRfY3fzcEaDzbxE1dyh4qXcaOed0Ax2T6EPEWJAtzX3Tm8tPrzAbQ
+                        7KD88tP3tR2YFient6bzB+lsmIKN2Gxlejdmlo84DUaZh7rS+xcItUIAJzx9PV8X
+                        YtLa2pVl77gD6VUSbwhCHY75+qH+JyxHrf+UxdfrH9Y7KzYPgzhIxwEzOvWB6GNH
+                        0cTy8TAoIiA2CMIgf33WGDnCiX/AlDn9Udtkb2gMWc0v+0Y2OvFGNLzpIORbXDei
+                        p1aocfqHGRu/NEBolTPmiE7/uCk23Mgo/rAHIU7zqDZVxZbXp7JvuwB+pRkX4xae
+                        xzWE+VMIjISQuGHm2A5XM/p327/8pSGmXK8LnsIXj/p7eJZ/awhokl62v9ris7gE
+                        BArbPW4Zcyi+p5U9osEgT3ivPG4lD/chYiPb9j5RHKZR638skqIejs21q23YgcVt
+                        gE6ChPk+iEbEw1mKM0t2VSas+GutILL1UgxQCnRT1xSDh6papuo9WWAYdfZTwVbJ
+                        1L8AzMH7GOOXzllXgU/vNc51acTp6gu16Au3u6dzRq6aCJhOLq2XNosjZhsDbY7Z
+                        A6F7fbIYI24iBQCb21kntk3BaUhp6QGcDYBUbWrgw0MMlgQLQW+sDJWg14aZYRaa
+                        eYlRn+ykOj4oZ32a7qhtASqYe+Ub2otmpjC+7VkviApL8cG7xF8lymVZgLkpKVxz
+                        -----END RSA PRIVATE KEY-----
