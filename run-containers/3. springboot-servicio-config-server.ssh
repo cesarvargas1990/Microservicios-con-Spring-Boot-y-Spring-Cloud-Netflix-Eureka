@@ -1,0 +1,9 @@
+echo "springboot-servicio-config-server..."
+cd /Users/mac/Documents/Documentos\ Cesar/Supergiros/workspace/springboot-servicio-config-server
+chmod +x mvnw
+./mvnw clean package 
+./mvnw install
+docker build -t config-server:v1 .
+docker network create springcloud
+docker run -p 8080:8080 --name config-server --network springcloud config-server:v1
+cd ..

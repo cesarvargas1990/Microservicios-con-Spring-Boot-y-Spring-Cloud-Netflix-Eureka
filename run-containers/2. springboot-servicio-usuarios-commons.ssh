@@ -1,0 +1,6 @@
+echo "springboot-servicio-usuarios-commons..."
+cd /Users/mac/Documents/Documentos\ Cesar/Supergiros/workspace/springboot-servicio-usuarios-commons
+chmod +x mvnw
+./mvnw clean package -DskipTests
+./mvnw install -DskipTests
+cd ..

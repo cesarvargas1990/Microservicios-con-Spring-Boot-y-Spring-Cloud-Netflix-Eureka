@@ -1,0 +1,7 @@
+echo "springboot-servicio-oauth..."
+cd /Users/mac/Documents/Documentos\ Cesar/Supergiros/workspace/springboot-servicio-oauth
+chmod +x mvnw
+./mvnw clean package -DskipTests
+docker build -t servicio-oauth:v1 .
+docker run -p 9100:9100 --network springcloud servicio-oauth:v1
+cd ..

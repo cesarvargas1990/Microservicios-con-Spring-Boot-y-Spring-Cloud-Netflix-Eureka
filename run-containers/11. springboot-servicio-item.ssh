@@ -1,0 +1,7 @@
+echo "springboot-servicio-item..."
+cd /Users/mac/Documents/Documentos\ Cesar/Supergiros/workspace/springboot-servicio-item
+chmod +x mvnw
+./mvnw clean package -DskipTests
+docker build -t servicio-items:v1 .
+docker run -p 8002:8002 -p 8005:8005 -p 8007:8007 --network springcloud servicio-items:v1
+cd ..
