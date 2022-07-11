@@ -42,6 +42,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/mac/Documents/Documentos Cesar/Supergiros/workspace/springboot-servicio-productos"/>
+			<item value="/Users/mac/Documents/Documentos Cesar/Supergiros/workspace/springboot-servicio-oauth"/>
 			<item value="/Users/mac/Documents/Documentos Cesar/Supergiros/workspace/springboot-servicio-eureka-server"/>
 			<item value="/Users/mac/Documents/Documentos Cesar/Supergiros/workspace/springboot-servicio-gateway-server"/>
 			<item value="/Users/mac/Documents/Documentos Cesar/Supergiros/workspace/springboot-servicio-zuul-server"/>
