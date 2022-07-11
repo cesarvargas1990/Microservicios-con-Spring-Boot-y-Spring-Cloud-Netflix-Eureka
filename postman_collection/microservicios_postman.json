@@ -1,0 +1,686 @@
+{
+	"info": {
+		"_postman_id": "739f2e92-0d51-418c-b159-ba6648fd8644",
+		"name": "CURSO MICROSERVICIOS UDEMY",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "listar 9001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar 8001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver 8001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8001/ver/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"ver",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ver 9001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9001/ver/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9001",
+					"path": [
+						"ver",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "items localhost:8002/listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8002/listar",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "items localhost:8002/ver/3/cantidad/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8002/ver/3/cantidad/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"ver",
+						"3",
+						"cantidad",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway localhost:8090/api/productos/ver/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkRvZSIsImNvcnJlbyI6Impob24uZG9lQGJvbHNhZGVpZGVhcy5jb20iLCJleHAiOjE2NTc1MDY3NTUsIm5vbWJyZSI6IkpvaG4iLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6Ijc3MGMwYmRhLTBiMzItNDEyNy04N2ExLTU2YTRiMzEzNTNkNCIsImNsaWVudF9pZCI6ImZyb250ZW5kYXBwIn0.NgrN6LEThNdl-zgEBEKuNQmFIlSiHy8M774_TRqXji4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/productos/ver/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"ver",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway rules localhost:8090/api/productos/ver/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkRvZSIsImNvcnJlbyI6Impob24uZG9lQGJvbHNhZGVpZGVhcy5jb20iLCJleHAiOjE2NTc1MDI3MDcsIm5vbWJyZSI6IkpvaG4iLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6ImU0YmZmNzhiLWNlMmQtNGQwMS1hOWZlLWU0ZGQ2ZGZiNzRmYyIsImNsaWVudF9pZCI6ImZyb250ZW5kYXBwIn0.up4ns4chsf12s2AO5QnlDHN2OiloAGdIHrzlKaNmdcI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/productos/ver/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"ver",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway localhost:8090/api/items/ver/2/cantidad/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkRvZSIsImNvcnJlbyI6Impob24uZG9lQGJvbHNhZGVpZGVhcy5jb20iLCJleHAiOjE2NTc1MDI3MDcsIm5vbWJyZSI6IkpvaG4iLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6ImU0YmZmNzhiLWNlMmQtNGQwMS1hOWZlLWU0ZGQ2ZGZiNzRmYyIsImNsaWVudF9pZCI6ImZyb250ZW5kYXBwIn0.up4ns4chsf12s2AO5QnlDHN2OiloAGdIHrzlKaNmdcI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/api/items/ver/2/cantidad/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"items",
+						"ver",
+						"2",
+						"cantidad",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gateway localhost:8090/api/productos/listar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/atom+xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8090/api/productos/listar?color=rojo",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"listar"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "rojo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zuul gateway rules cookie localhost:8090/api/productos/ver/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkRvZSIsImNvcnJlbyI6Impob24uZG9lQGJvbHNhZGVpZGVhcy5jb20iLCJleHAiOjE2NTc1MDI3MDcsIm5vbWJyZSI6IkpvaG4iLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6ImU0YmZmNzhiLWNlMmQtNGQwMS1hOWZlLWU0ZGQ2ZGZiNzRmYyIsImNsaWVudF9pZCI6ImZyb250ZW5kYXBwIn0.up4ns4chsf12s2AO5QnlDHN2OiloAGdIHrzlKaNmdcI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "12345678",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8090/api/productos/ver/2?color=verde",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"ver",
+						"2"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "verde"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "config server localhost:8080/servicio-items/default",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/servicio-items/default",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servicio-items",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuarios/search/buscar-username *ojo el puertodinamico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57872/usuarios/search/buscar-username?username=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57872",
+					"path": [
+						"usuarios",
+						"search",
+						"buscar-username"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55613/usuarios/ * ojo puerto es dinamico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57872/usuarios/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57872",
+					"path": [
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token cambiar puerto en UsuarioFeignClient localhost:9100/oauth/token del oauth server",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "frontendapp",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:9100/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "9100",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zuul token  localhost:8090/api/usuarios/usuarios/1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "frontendapp",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/api/security/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"security",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zuul localhost:8090/api/usuarios/usuarios/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJHdXptYW4iLCJjb3JyZW8iOiJwcm9mZXNvckBib2xzYWRlaWRlYXMuY29tIiwiZXhwIjoxNjU3NTA0MDAzLCJub21icmUiOiJBbmRyZXMiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiYzRkYTI4NjctOWUwZi00MTkxLWFkOTEtNTc3ZWYxOTVkMTYyIiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.Rzy34epzU9o1Lf0T-9psFcNYqFgX8b-uNtctqaBmi10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/api/productos/ver/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"productos",
+						"ver",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zuul ejemplo ruta sin permiso localhost:8090/api/usuarios/usuarios/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhbmRyZXMiLCJzY29wZSI6WyJyZWFkIiwid3JpdGUiXSwiYXBlbGxpZG8iOiJHdXptYW4iLCJjb3JyZW8iOiJwcm9mZXNvckBib2xzYWRlaWRlYXMuY29tIiwiZXhwIjoxNjU3NTA0MDAzLCJub21icmUiOiJBbmRyZXMiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiYzRkYTI4NjctOWUwZi00MTkxLWFkOTEtNTc3ZWYxOTVkMTYyIiwiY2xpZW50X2lkIjoiZnJvbnRlbmRhcHAifQ.Rzy34epzU9o1Lf0T-9psFcNYqFgX8b-uNtctqaBmi10",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/api/usuarios/usuarios/",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"usuarios",
+						"usuarios",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zuul llocalhost:8090/api/usuarios/usuarios/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJhZG1pbiIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6IkRvZSIsImNvcnJlbyI6Impob24uZG9lQGJvbHNhZGVpZGVhcy5jb20iLCJleHAiOjE2NTc1MTc4NzgsIm5vbWJyZSI6IkpvaG4iLCJhdXRob3JpdGllcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImp0aSI6IjY0N2Q3YjUyLTk2NTYtNGQ4OC04Nzk1LTVkMTNkYjMyMGE2OSIsImNsaWVudF9pZCI6ImZyb250ZW5kYXBwIn0.4Tuk0UphQG0XYSrcwuhKWwUhmhMK3OR3pzrBZBaKFoQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/api/usuarios/usuarios/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"usuarios",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "zuul server token localhost:8090/api/security/oauth/token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "frontendapp",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8090/api/security/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"api",
+						"security",
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
