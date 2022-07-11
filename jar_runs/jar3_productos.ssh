@@ -1,0 +1,2 @@
+cd /Users/mac/Documents/Documentos\ Cesar/Supergiros/workspace/springboot-servicio-productos/target
+java -jar springboot-servicio-productos-0.0.1-SNAPSHOT.jar

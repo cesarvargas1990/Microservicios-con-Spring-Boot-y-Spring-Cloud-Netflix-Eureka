@@ -1,0 +1,2 @@
+cd /Users/mac/Documents/Documentos\ Cesar/Supergiros/workspace/zipkin-server
+java -jar zipkin-server-2.12.9-exec.jar
