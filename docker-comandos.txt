@@ -5,7 +5,6 @@
     docker build -t config-server:v1 .
     docker network create spring-microservicios
     docker run -p 8888:8888 --name config-server --network springcloud config-server:v1
-    docker run -p 8080:8080 --name config-server --network springcloud config-server:v1
   
 
 ======================== servicio-eureka-server

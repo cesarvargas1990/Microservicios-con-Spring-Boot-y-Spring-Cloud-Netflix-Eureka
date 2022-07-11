@@ -3,6 +3,7 @@ package com.formacionbdi.springboot.app.oauth.security.event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationEventPublisher;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
@@ -22,25 +23,19 @@ public class AuthenticationSuccessErrorHandler implements AuthenticationEventPub
 
 	@Autowired
 	private IUsuarioService usuarioService;
-	
+    @Value("${config.security.oauth.client.id}")
+    private String id;
 	@Override
+	
 	public void publishAuthenticationSuccess(Authentication authentication) {
-		
-		// if(authentication.getName().equalsIgnoreCase("frontendapp")) {
-		if(authentication.getDetails() instanceof WebAuthenticationDetails) {
-			return;
-		}
-		
 		UserDetails user = (UserDetails) authentication.getPrincipal();
 		String mensaje = "Success Login: " + user.getUsername();
-		System.out.println(mensaje);
-		log.info(mensaje);
-
-		Usuario usuario = usuarioService.findByUsername(authentication.getName());
-		
-		if(usuario.getIntentos() != null && usuario.getIntentos() > 0) {
-			usuario.setIntentos(0);
-			usuarioService.update(usuario, usuario.getId());
+		if (!id.equals(authentication.getName())){
+		    Usuario usuario = usuarioService.findByUsername(user.getUsername());
+		    if (usuario.getIntentos() != null && usuario.getIntentos() > 0) {
+		        usuario.setIntentos(0);
+		        usuarioService.update(usuario, usuario.getId());
+		    }
 		}
 	}
 

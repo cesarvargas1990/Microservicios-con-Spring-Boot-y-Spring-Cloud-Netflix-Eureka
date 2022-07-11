@@ -5,6 +5,7 @@ import java.util.Map;
 import org.apache.catalina.core.ApplicationContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
@@ -21,13 +22,5 @@ public class SpringbootServicioConfigServerApplication {
 	}
 
 	
-	@EventListener
-    public void handleContextRefresh(ContextRefreshedEvent event) {
-        org.springframework.context.ApplicationContext applicationContext = event.getApplicationContext();
-        RequestMappingHandlerMapping requestMappingHandlerMapping = applicationContext
-                .getBean("requestMappingHandlerMapping", RequestMappingHandlerMapping.class);
-        Map<RequestMappingInfo, HandlerMethod> map = requestMappingHandlerMapping
-                .getHandlerMethods();
-        map.forEach((key, value) -> System.out.println("key"+key+"+"+value));
-    }
+
 }

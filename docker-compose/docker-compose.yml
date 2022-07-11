@@ -3,7 +3,7 @@ services:
   config-server:
     image: config-server:v1
     ports:
-      - "8888:8888"
+      - "8080:8080"
     restart: always
     networks:
       - springcloud
@@ -56,7 +56,7 @@ services:
       - config-server
       - servicio-eureka-server
       - servicio-productos
-    servicio-usuarios:
+  servicio-usuarios:
     image: servicio-usuarios:v1
     restart: always
     networks:
@@ -65,7 +65,7 @@ services:
       - config-server
       - servicio-eureka-server
       - microservicios-postgres12
-    servicio-oauth:
+  servicio-oauth:
     image: servicio-oauth:v1
     ports:
       - "9100:9100"

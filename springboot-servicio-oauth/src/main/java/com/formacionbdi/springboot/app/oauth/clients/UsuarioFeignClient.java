@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.formacionbdi.springboot.app.commons.usuarios.models.entity.Usuario;
 
-@FeignClient(name="servicio-usuarios")
+@FeignClient(name="servicio-usuarios", url = "http://localhost:55613")
 public interface UsuarioFeignClient {
 
 	@GetMapping("/usuarios/search/buscar-username")
